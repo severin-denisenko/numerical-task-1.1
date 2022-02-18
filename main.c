@@ -97,7 +97,7 @@ int main(){
     /// Multiplying ///
     ///////////////////
 
-    if(stupid_multiply(matrix_A, matrix_B, matrix_C, n) == 1){
+    if(optimised_stupid_multiply(matrix_A, matrix_B, matrix_C, n) == 1){
         printf("Error occur during multiplication. Exiting...");
         exit(1);
     }
