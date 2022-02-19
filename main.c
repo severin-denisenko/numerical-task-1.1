@@ -81,16 +81,9 @@ int main(){
 
     // Finally reading
 
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n; ++j) {
-            fscanf(A, "%lf", &matrix_A[j + n * i]);
-        }
-    }
-
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n; ++j) {
-            fscanf(B, "%lf", &matrix_B[j + n * i]);
-        }
+    for (int i = 0; i < n * n; ++i) {
+        fscanf(A, "%lf", &matrix_A[i]);
+        fscanf(B, "%lf", &matrix_B[i]);
     }
 
     ///////////////////
